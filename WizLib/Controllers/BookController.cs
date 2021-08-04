@@ -25,6 +25,11 @@ namespace WizLib.Controllers
             List<Book> objList = _db.Books.Include(u => u.Publisher)
                                     .Include(u => u.BookAuthors).ThenInclude(u => u.Author).ToList();
 
+
+            //12345
+
+
+
             //List<Book> objList = _db.Books.ToList();
             //foreach (var obj in objList)
             //{
